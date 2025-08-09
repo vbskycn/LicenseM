@@ -122,9 +122,9 @@ curl -X POST https://license-demo.zhoujie8.cn/api/license/verify -H "Content-Typ
 
 ## 🔗 相关链接
 
-- 🌐 [项目主页](https://github.com/vbskycn/License)
+- 🌐 [项目主页](https://github.com/vbskycn/LicenseM)
 - 📚 [在线文档](https://license.zhoujie8.cn/)
-- 🐛 [问题反馈](https://github.com/vbskycn/License/issues)
+- 🐛 [问题反馈](https://github.com/vbskycn/LicenseM/issues)
 - 🐳 [Docker镜像](https://hub.docker.com/r/zhoujie218/license-management-system)
 
 ---

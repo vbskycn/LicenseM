@@ -484,7 +484,7 @@ docker logs license-management-system
 3. 提交Issue或联系技术支持
 
 ### 相关链接
-- 🌐 [项目主页](https://github.com/vbskycn/License)
+- 🌐 [项目主页](https://github.com/vbskycn/LicenseM)
 - 📚 [在线文档](https://license.zhoujie8.cn/)
 - 🐳 [Docker镜像](https://hub.docker.com/r/zhoujie218/license-management-system)
 
