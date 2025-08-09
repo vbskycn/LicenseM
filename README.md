@@ -16,11 +16,31 @@ description: 简单的安装部署
 
 密钥管理系统是一个现代化的License管理解决方案，支持密钥生成、验证、设备管理等功能。本系统采用应用-密钥类型架构，提供完整的生命周期管理。
 
-## 🚀 快速导航
+## 📚 文档导航
 
-根据您的需求，选择相应的文档：
+本系统提供完整的技术文档，按照不同用户角色进行分类：
 
-### [💻 Demo在线演示](https://license-demo.zhoujie8.cn/)  
+### 📖 用户指南
+
+面向最终用户的使用文档：
+
+- [用户指南](user-guide.md) - 完整的安装、部署、使用指南
+
+### 🔧 开发者指南
+
+面向开发者的技术文档：
+
+- [开发者指南](developer-guide.md) - 技术架构、API接口、集成指南
+
+### ⚙️ 管理员指南
+
+面向系统管理员的运维文档：
+
+- [管理员指南](admin-guide.md) - 系统配置、备份恢复、故障排除
+
+
+
+## [💻 Demo在线演示](https://license-demo.zhoujie8.cn/)  
 
 - **账号**：`admin`  
 - **密码**：`admin123`  
@@ -67,51 +87,29 @@ curl -X POST https://license-demo.zhoujie8.cn/api/license/verify -H "Content-Typ
 
 
 
-### 👤 我是最终用户
+## 🏗️ 技术架构
 
-**想要安装和使用系统**
+本系统采用**应用-密钥类型**架构，已废弃旧的产品-套餐模型：
 
-  - [📖 用户指南](user-guide.md) - 完整的安装、部署、使用指南
-  - [🚀 快速开始](user-guide.md#_1) - 环境要求和基本安装
-  - [📦 安装指南](user-guide.md#_6) - 详细的安装步骤
-  - [🐳 Docker部署](user-guide.md#docker) - 容器化部署方案
-  - [📖 使用指南](user-guide.md#_12) - 系统操作说明
-  - [⚙️ 配置说明](user-guide.md#_21) - 环境变量配置
-  - [🔧 故障排除](user-guide.md#_27) - 常见问题解决
+- **应用 (Application)**: 每个密钥必须属于一个应用
+- **密钥类型 (License Type)**: 每个应用下有多个密钥类型  
+- **密钥 (License)**: 基于应用和密钥类型生成
 
-### 👨‍💻 我是开发者
+### 核心特性
 
-**想要集成API或了解技术细节**
+- ✅ 应用-密钥类型架构
+- ✅ 设备管理策略（宽松期/严格期）
+- ✅ 密钥激活逻辑（首次验证激活）
+- ✅ 批量管理功能（导出、删除、复制）
+- ✅ 用户管理功能
+- ✅ IP地址记录
+- ✅ 速率限制
+- ✅ 暂停/恢复功能
+- ✅ 搜索和过滤功能
+- ✅ 在线备份还原功能
+- ✅ 备份文件管理
 
-  - [🔧 开发者指南](developer-guide.md) - 技术架构、API接口、集成指南
-  - [🏗️ 技术架构](developer-guide.md#_1) - 系统架构设计
-  - [🔐 密钥验证逻辑](developer-guide.md#_6) - 验证机制详解
-  - [📡 API接口](developer-guide.md#api) - 完整的API文档
-  - [🔗 客户端集成](developer-guide.md#_34) - 集成示例和SDK
-  - [🛡️ 安全机制](developer-guide.md#_40) - 安全设计和防护
-  - [🧪 测试指南](developer-guide.md#_42) - 测试方法和工具
 
-### 👨‍💼 我是系统管理员
-
-**想要配置和维护系统**
-
-  - [⚙️ 管理员指南](admin-guide.md) - 系统配置、备份恢复、故障排除
-  - [⚙️ 系统配置](admin-guide.md#_1) - 环境变量和高级配置
-  - [💾 备份恢复](admin-guide.md#_15) - 数据备份和恢复策略
-  - [🔧 故障排除](admin-guide.md#_28) - 系统问题诊断和解决
-  - [📊 监控维护](admin-guide.md#_36) - 系统监控和维护
-  - [🛡️ 安全加固](admin-guide.md#_46) - 安全配置和加固措施
-
-## ⚡ 快速访问
-
-**最常用的页面链接：**
-
-- [🚀 快速开始](user-guide.md#_1) - 5分钟快速部署
-- [📡 API接口](developer-guide.md#api) - 完整的API文档
-- [⚙️ 系统配置](admin-guide.md#_1) - 环境变量配置
-- [🔐 密钥验证逻辑](developer-guide.md#_6) - 验证机制详解
-- [💾 备份恢复](admin-guide.md#_15) - 数据备份策略
-- [🔧 故障排除](user-guide.md#_27) - 常见问题解决
 
 ## 🎯 系统特色
 
@@ -122,6 +120,8 @@ curl -X POST https://license-demo.zhoujie8.cn/api/license/verify -H "Content-Typ
 - ✅ **用户管理功能** - 完整的权限控制
 - ✅ **在线备份还原** - 数据安全保障
 - ✅ **搜索和过滤** - 快速定位目标数据
+
+
 
 ## 🔗 相关链接
 
