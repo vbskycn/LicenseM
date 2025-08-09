@@ -1,0 +1,150 @@
+# MkDocs配置文件
+# 密钥管理系统文档站点配置
+
+site_name: 密钥管理系统
+site_description: 现代化License管理系统，支持密钥生成、验证、设备管理等功能
+site_author: zhoujie
+site_url: https://license.zhoujie8.cn/
+
+# 仓库信息
+repo_name: License
+repo_url: https://license.zhoujie8.cn/
+edit_uri: edit/main/docs/
+
+# 文档目录配置
+site_dir: site
+docs_dir: docs
+
+# 版权信息
+copyright: Copyright &copy; 2025 <a href="https://www.zhoujie218.top" target="_blank">zhoujie218</a>
+
+# 主题配置 - Material for MkDocs
+theme:
+  name: material
+  language: zh
+  custom_dir: docs/overrides
+  
+  # 调色板配置
+  palette:
+    # 浅色主题
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色主题
+    # 深色主题
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色主题
+
+  # 字体配置
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # 图标配置
+  icon:
+    repo: fontawesome/solid/home
+  
+  features:
+    - content.code.copy 
+
+  # 额外CSS和JS
+  extra_css:
+    - stylesheets/extra.css
+  extra_javascript:
+    - javascripts/extra.js
+
+# 插件配置
+plugins:
+  - search:
+      lang: zh
+      separator: '[\s\-,:!=\[\]()"/`|]+'
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
+      locale: zh
+
+# 文档结构
+nav:
+  - 首页: index.md
+  - 用户指南: user-guide.md
+  - 开发指南: developer-guide.md
+  - 管理指南: admin-guide.md
+  - 演示图例: img.md
+# 严格模式
+strict: false
+
+# 验证链接
+validation:
+  nav:
+    omitted_files: ignore
+    not_found: warn
+  absolute_links: ignore
+
+# 开发服务器配置
+dev_addr: 127.0.0.1:8000
+
+# 构建配置
+use_directory_urls: true
+
+# 额外配置
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:admin@zhoujie8.cn
+    - icon: fontawesome/brands/github
+      link: https://github.com/vbskycn/License
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/zhoujie218/license-management-system
+
+# Markdown扩展
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: 目录
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde 

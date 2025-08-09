@@ -1,0 +1,133 @@
+/* 密钥管理系统 MkDocs 基础样式增强 */
+
+/* 首页样式优化 */
+.md-content h1 {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 0.5rem;
+}
+
+/* 徽章样式 */
+.md-content img[src*="shields.io"] {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    vertical-align: middle;
+}
+
+/* 系统截图样式 */
+.md-content img[src*="image-20250805"] {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 代码块样式增强 */
+.md-content pre {
+    border-radius: 8px;
+    border-left: 4px solid #3f51b5;
+}
+
+/* 引用块样式 */
+.md-content blockquote {
+    border-left: 4px solid #ff9800;
+    background-color: #fff3e0;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+/* 警告框样式 */
+.md-content .admonition.warning {
+    border-left-color: #ff9800;
+}
+
+.md-content .admonition.warning .admonition-title {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* 信息框样式 */
+.md-content .admonition.info {
+    border-left-color: #2196f3;
+}
+
+.md-content .admonition.info .admonition-title {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* 成功框样式 */
+.md-content .admonition.success {
+    border-left-color: #4caf50;
+}
+
+.md-content .admonition.success .admonition-title {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* 表格样式优化 */
+.md-content table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.md-content table th {
+    background-color: #3f51b5;
+    color: white;
+    font-weight: 600;
+}
+
+/* 页面内容中的链接样式 */
+.md-content a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.md-content a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+/* 搜索框样式 */
+.md-search__input {
+    border-radius: 20px;
+}
+
+
+
+/* 深色主题适配 */
+[data-md-color-scheme="slate"] .md-content img[src*="image-20250805"] {
+    border-color: #424242;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+[data-md-color-scheme="slate"] .md-content blockquote {
+    background-color: #424242;
+    border-left-color: #ff9800;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .md-content img[src*="image-20250805"] {
+        margin: 0.5rem 0;
+    }
+    
+    .md-content h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .md-content img[src*="image-20250805"] {
+        max-width: 80%;
+        page-break-inside: avoid;
+    }
+    
+    .md-content pre {
+        page-break-inside: avoid;
+    }
+} 

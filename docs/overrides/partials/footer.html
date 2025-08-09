@@ -1,0 +1,37 @@
+{% import "partials/language.html" as lang with context %}
+
+<!-- Application footer -->
+<footer class="md-footer" style="padding: 0.5rem 0; background-color: #1a1a1a;">
+  <div class="md-footer-meta md-typeset" style="padding: 0; background-color: #1a1a1a;">
+    <div class="md-footer-meta__inner md-grid" style="padding: 0; min-height: auto; align-items: center; background-color: #1a1a1a; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between;">
+      
+      <!-- Copyright information -->
+      {% if config.copyright %}
+        <div class="md-copyright" style="margin: 0; padding: 0; line-height: 1.2; background-color: #1a1a1a; flex-shrink: 1; min-width: 0;">
+          <div class="md-copyright__highlight" style="margin: 0; padding: 0; font-size: 0.64rem; background-color: #1a1a1a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+            {{ config.copyright }}
+          </div>
+        </div>
+      {% endif %}
+
+      <!-- Social links -->
+      {% if config.extra.social %}
+        <div class="md-social" style="margin: 0; padding: 0; line-height: 1.2; background-color: #1a1a1a; flex-shrink: 0; display: flex; align-items: center;">
+          {% for social in config.extra.social %}
+            <a
+              href="{{ social.link | url }}"
+              {% if not social.link.startswith('mailto:') %}target="_blank"{% endif %}
+              rel="noopener"
+              title="{{ social.name | default(social.link) }}"
+              class="md-social__link"
+              style="margin: 0; padding: 0.25rem; line-height: 1; background-color: #1a1a1a; display: flex; align-items: center;"
+            >
+              {% include ".icons/" ~ social.icon ~ ".svg" %}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</footer> 
