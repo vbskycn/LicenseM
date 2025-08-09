@@ -24,19 +24,19 @@ description: 简单的安装部署
 
 面向最终用户的使用文档：
 
-- [用户指南](user-guide.md) - 完整的安装、部署、使用指南
+- [用户指南](docs/user-guide.md) - 完整的安装、部署、使用指南
 
 ### 🔧 开发者指南
 
 面向开发者的技术文档：
 
-- [开发者指南](developer-guide.md) - 技术架构、API接口、集成指南
+- [开发者指南](docs/developer-guide.md) - 技术架构、API接口、集成指南
 
 ### ⚙️ 管理员指南
 
 面向系统管理员的运维文档：
 
-- [管理员指南](admin-guide.md) - 系统配置、备份恢复、故障排除
+- [管理员指南](docs/admin-guide.md) - 系统配置、备份恢复、故障排除
 
 
 
