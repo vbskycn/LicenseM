@@ -42,6 +42,61 @@ description: 简单的安装部署
 
 
 
+## 📚 在线文档导航
+
+### 👤 我是最终用户[¶](https://license.zhoujie8.cn/#_3)
+
+**想要安装和使用系统**
+
+- [📖 用户指南](https://license.zhoujie8.cn/user-guide/) - 完整的安装、部署、使用指南
+- [🚀 快速开始](https://license.zhoujie8.cn/user-guide/#_1) - 环境要求和基本安装
+- [📦 安装指南](https://license.zhoujie8.cn/user-guide/#_6) - 详细的安装步骤
+- [🐳 Docker部署](https://license.zhoujie8.cn/user-guide/#docker) - 容器化部署方案
+- [📖 使用指南](https://license.zhoujie8.cn/user-guide/#_12) - 系统操作说明
+- [⚙️ 配置说明](https://license.zhoujie8.cn/user-guide/#_21) - 环境变量配置
+- [🔧 故障排除](https://license.zhoujie8.cn/user-guide/#_27) - 常见问题解决
+
+### 👨‍💻 我是开发者[¶](https://license.zhoujie8.cn/#_4)
+
+**想要集成API或了解技术细节**
+
+- [🔧 开发者指南](https://license.zhoujie8.cn/developer-guide/) - 技术架构、API接口、集成指南
+- [🏗️ 技术架构](https://license.zhoujie8.cn/developer-guide/#_1) - 系统架构设计
+- [🔐 密钥验证逻辑](https://license.zhoujie8.cn/developer-guide/#_6) - 验证机制详解
+- [📡 API接口](https://license.zhoujie8.cn/developer-guide/#api) - 完整的API文档
+- [🔗 客户端集成](https://license.zhoujie8.cn/developer-guide/#_34) - 集成示例和SDK
+- [🛡️ 安全机制](https://license.zhoujie8.cn/developer-guide/#_40) - 安全设计和防护
+- [🧪 测试指南](https://license.zhoujie8.cn/developer-guide/#_42) - 测试方法和工具
+
+### 👨‍💼 我是系统管理员[¶](https://license.zhoujie8.cn/#_5)
+
+**想要配置和维护系统**
+
+- [⚙️ 管理员指南](https://license.zhoujie8.cn/admin-guide/) - 系统配置、备份恢复、故障排除
+- [⚙️ 系统配置](https://license.zhoujie8.cn/admin-guide/#_1) - 环境变量和高级配置
+- [💾 备份恢复](https://license.zhoujie8.cn/admin-guide/#_15) - 数据备份和恢复策略
+- [🔧 故障排除](https://license.zhoujie8.cn/admin-guide/#_28) - 系统问题诊断和解决
+- [📊 监控维护](https://license.zhoujie8.cn/admin-guide/#_36) - 系统监控和维护
+- [🛡️ 安全加固](https://license.zhoujie8.cn/admin-guide/#_46) - 安全配置和加固措施
+
+## ⚡ 快速访问[¶](https://license.zhoujie8.cn/#_6)
+
+**最常用的页面链接：**
+
+- [🚀 快速开始](https://license.zhoujie8.cn/user-guide/#_1) - 5分钟快速部署
+
+- [📡 API接口](https://license.zhoujie8.cn/developer-guide/#api) - 完整的API文档
+
+- [⚙️ 系统配置](https://license.zhoujie8.cn/admin-guide/#_1) - 环境变量配置
+
+- [🔐 密钥验证逻辑](https://license.zhoujie8.cn/developer-guide/#_6) - 验证机制详解
+
+- [💾 备份恢复](https://license.zhoujie8.cn/admin-guide/#_15) - 数据备份策略
+
+- [🔧 故障排除](https://license.zhoujie8.cn/user-guide/#_27) - 常见问题解决
+
+  
+
 ## [💻 Demo在线演示](https://license-demo.zhoujie8.cn/)  
 
 - **账号**：`admin`  
@@ -86,52 +141,6 @@ curl -X POST https://license-demo.zhoujie8.cn/api/license/verify \
 ```bash
 curl -X POST https://license-demo.zhoujie8.cn/api/license/verify -H "Content-Type: application/json" -d "{\"licenseKey\":\"TRIAL-26C4CA7481C2E9245D4CDFAB7F08454F\",\"machineId\":\"test-device-091\"}"
 ```
-
-### 👤 我是最终用户[¶](https://license.zhoujie8.cn/#_3)
-
-**想要安装和使用系统**
-
-- [📖 用户指南](https://license.zhoujie8.cn/user-guide/) - 完整的安装、部署、使用指南
-- [🚀 快速开始](https://license.zhoujie8.cn/user-guide/#_1) - 环境要求和基本安装
-- [📦 安装指南](https://license.zhoujie8.cn/user-guide/#_6) - 详细的安装步骤
-- [🐳 Docker部署](https://license.zhoujie8.cn/user-guide/#docker) - 容器化部署方案
-- [📖 使用指南](https://license.zhoujie8.cn/user-guide/#_12) - 系统操作说明
-- [⚙️ 配置说明](https://license.zhoujie8.cn/user-guide/#_21) - 环境变量配置
-- [🔧 故障排除](https://license.zhoujie8.cn/user-guide/#_27) - 常见问题解决
-
-### 👨‍💻 我是开发者[¶](https://license.zhoujie8.cn/#_4)
-
-**想要集成API或了解技术细节**
-
-- [🔧 开发者指南](https://license.zhoujie8.cn/developer-guide/) - 技术架构、API接口、集成指南
-- [🏗️ 技术架构](https://license.zhoujie8.cn/developer-guide/#_1) - 系统架构设计
-- [🔐 密钥验证逻辑](https://license.zhoujie8.cn/developer-guide/#_6) - 验证机制详解
-- [📡 API接口](https://license.zhoujie8.cn/developer-guide/#api) - 完整的API文档
-- [🔗 客户端集成](https://license.zhoujie8.cn/developer-guide/#_34) - 集成示例和SDK
-- [🛡️ 安全机制](https://license.zhoujie8.cn/developer-guide/#_40) - 安全设计和防护
-- [🧪 测试指南](https://license.zhoujie8.cn/developer-guide/#_42) - 测试方法和工具
-
-### 👨‍💼 我是系统管理员[¶](https://license.zhoujie8.cn/#_5)
-
-**想要配置和维护系统**
-
-- [⚙️ 管理员指南](https://license.zhoujie8.cn/admin-guide/) - 系统配置、备份恢复、故障排除
-- [⚙️ 系统配置](https://license.zhoujie8.cn/admin-guide/#_1) - 环境变量和高级配置
-- [💾 备份恢复](https://license.zhoujie8.cn/admin-guide/#_15) - 数据备份和恢复策略
-- [🔧 故障排除](https://license.zhoujie8.cn/admin-guide/#_28) - 系统问题诊断和解决
-- [📊 监控维护](https://license.zhoujie8.cn/admin-guide/#_36) - 系统监控和维护
-- [🛡️ 安全加固](https://license.zhoujie8.cn/admin-guide/#_46) - 安全配置和加固措施
-
-## ⚡ 快速访问[¶](https://license.zhoujie8.cn/#_6)
-
-**最常用的页面链接：**
-
-- [🚀 快速开始](https://license.zhoujie8.cn/user-guide/#_1) - 5分钟快速部署
-- [📡 API接口](https://license.zhoujie8.cn/developer-guide/#api) - 完整的API文档
-- [⚙️ 系统配置](https://license.zhoujie8.cn/admin-guide/#_1) - 环境变量配置
-- [🔐 密钥验证逻辑](https://license.zhoujie8.cn/developer-guide/#_6) - 验证机制详解
-- [💾 备份恢复](https://license.zhoujie8.cn/admin-guide/#_15) - 数据备份策略
-- [🔧 故障排除](https://license.zhoujie8.cn/user-guide/#_27) - 常见问题解决
 
 
 
