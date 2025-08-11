@@ -125,7 +125,7 @@ curl http://localhost:3005/api/test
 mkdir -p ${PWD}/license-data
 
 # 设置目录权限（Linux/macOS）
-sudo chown -R 1000:1000 ${PWD}/license-data
+sudo chown -R 1001:1001 ${PWD}/license-data
 sudo chmod -R 755 ${PWD}/license-data
 
 # 停止并删除旧容器
